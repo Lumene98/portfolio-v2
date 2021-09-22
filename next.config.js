@@ -2,5 +2,5 @@
 module.exports = {
   reactStrictMode: true,
   assetPrefix: '/portfolio-v2/',
-  basePath: '/portfolio-v2/'
+  basePath: '/portfolio-v2'
 }
