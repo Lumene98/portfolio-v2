@@ -204,6 +204,7 @@ const SocialLinkContainer = styled.div`
 `;
 
 const SocialLink = styled.a`
+  height: 56px;
   background: linear-gradient(90deg, #ff32bb -26.33%, #ff5f58 73.79%);
   box-shadow: 0px 4px 11px rgba(255, 63, 112, 0.48);
   border-radius: 10px;
