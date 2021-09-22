@@ -2,11 +2,11 @@ import React from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styled from 'styled-components';
-import Sphere from './components/icons/Sphere';
-import TechIcons from './components/icons/technologies';
-import BlockchainIcons from './components/icons/blockchains';
-import UXIcons from './components/icons/UX';
-import SocialIcons from './components/icons/social';
+import Sphere from '../icons/Sphere';
+import TechIcons from '../icons/technologies';
+import BlockchainIcons from '../icons/blockchains';
+import UXIcons from '../icons/UX';
+import SocialIcons from '../icons/social';
 
 const Container = styled.div`
   min-height: 100vh;
@@ -270,8 +270,8 @@ const Home: NextPage = () => (
     <Footer>
       <SocialLinkContainer>
         {SocialIcons.map(({ Icon, url }) => (
-          <SocialLink href={url} target="_blank">
-            <Icon key={Icon.name} />
+          <SocialLink href={url} target="_blank" key={Icon.name}>
+            <Icon />
           </SocialLink>
         ))}
       </SocialLinkContainer>
