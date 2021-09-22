@@ -204,13 +204,33 @@ const SocialLinkContainer = styled.div`
 `;
 
 const SocialLink = styled.a`
-  background: radial-gradient(50.94% 50.94% at 50.28% 49.06%, #ff3f70 21.35%, rgba(255, 67, 106, 0.82) 100%);
+  background: linear-gradient(90deg, #ff32bb -26.33%, #ff5f58 73.79%);
   box-shadow: 0px 4px 11px rgba(255, 63, 112, 0.48);
   border-radius: 10px;
   display: flex;
-  padding: 0.5rem;
-  margin: auto 0.5rem 1rem 0.5rem;
+  padding: 1rem;
+  margin: auto 0.5rem 2rem 0.5rem;
   cursor: pointer;
+  align-content: center;
+
+  &:hover {
+    box-shadow: 0px 4px 28px rgba(255, 63, 112, 0.7);
+  }
+`;
+
+const Link = styled.a`
+  min-height: 56px;
+  font-family: basier_circlebold;
+  background: linear-gradient(90deg, #ff32bb -26.33%, #ff5f58 73.79%);
+  box-shadow: 0px 4px 11px rgba(255, 63, 112, 0.48);
+  border-radius: 10px;
+  display: flex;
+  padding: 1rem;
+  margin: auto 0.5rem 2rem 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: bold;
 
   &:hover {
     box-shadow: 0px 4px 28px rgba(255, 63, 112, 0.7);
@@ -265,6 +285,7 @@ const Home: NextPage = () => (
         </IconsContainer>
       </Others>
     </Expertise>
+
     <Main />
 
     <Footer>
@@ -274,6 +295,9 @@ const Home: NextPage = () => (
             <Icon />
           </SocialLink>
         ))}
+        <Link href="https://drive.google.com/file/d/17ufJbDztyHgCb2sCPOwiOsA1MACXzUV5/view?usp=sharing" target="_blank">
+          Get my CV!
+        </Link>
       </SocialLinkContainer>
     </Footer>
   </Container>
