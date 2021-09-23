@@ -33,16 +33,6 @@ const Container = styled.div`
 
 const SphereContainer = styled.div`
   margin: 3rem auto 1rem auto;
-
-  animation: fade-in 3s cubic-bezier(0.6, 0, 0.4, 1) both 1;
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 `;
 
 const TitleContainer = styled.div`

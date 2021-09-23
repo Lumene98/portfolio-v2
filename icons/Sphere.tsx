@@ -19,7 +19,7 @@ function Sphere() {
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#FF32BB">
-            <animate attributeName="stop-color" values="#FF32BB, #EE2AAD, #D52199" dur="2s" repeatCount="indefinite" />
+            <animate attributeName="stop-color" values="#FF32BB; #EE2AAD; #D52199" dur="5s" repeatCount="indefinite" />
             <animate
               attributeName="offset"
               values="0;.1;.2;.3;.4;.5;.6;.7;.6;.5;.4;.3;.2;.1;0;"
@@ -28,7 +28,7 @@ function Sphere() {
             />
           </stop>
           <stop offset="1" stopColor="#FF5F58">
-            <animate attributeName="stop-color" values=" #FF5F58, #EA5B55, #EE7671" dur="2s" repeatCount="indefinite" />
+            <animate attributeName="stop-color" values=" #FF5F58; #EA5B55; #EE7671" dur="5s" repeatCount="indefinite" />
           </stop>
         </radialGradient>
       </defs>
