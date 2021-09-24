@@ -7,6 +7,7 @@ import TechIcons from '../icons/technologies';
 import BlockchainIcons from '../icons/blockchains';
 import UXIcons from '../icons/UX';
 import SocialIcons from '../icons/social';
+import Github from '../icons/social/Github';
 
 const Container = styled.div`
   padding: 0 0.5rem;
@@ -409,7 +410,9 @@ const Home: NextPage = () => {
               <h1>{project.name}</h1>
               <p>{project.description}</p>
               <div>
-                <span>{SocialIcons.map(({ Icon }) => (Icon.name === 'Github' ? <Icon /> : null))}</span>
+                <span>
+                  <Github />
+                </span>
               </div>
             </Project>
           ))}
