@@ -186,10 +186,6 @@ const SocialLinkContainer = styled.div`
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
-
-  & > * {
-    min-width: 120px;
-  }
 `;
 
 const SocialLink = styled.a`
@@ -216,15 +212,22 @@ const Link = styled.a`
   box-shadow: 0px 4px 11px rgba(255, 50, 187, 0.5);
   border-radius: 10px;
   display: flex;
-  padding: 1rem;
+  padding: 0 1rem;
   margin: auto 0.5rem 0.5rem 0.5rem;
   cursor: pointer;
-  font-size: 1rem;
-  color: #fff;
   font-weight: bold;
+  justify-content: center;
+  align-content: center;
 
   &:hover {
     box-shadow: 0px 4px 28px rgba(255, 50, 187, 0.5);
+  }
+
+  & > h1 {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    align-self: center;
   }
 `;
 
@@ -429,7 +432,7 @@ const Home: NextPage = () => {
             href="https://drive.google.com/file/d/17ufJbDztyHgCb2sCPOwiOsA1MACXzUV5/view?usp=sharing"
             target="_blank"
           >
-            Get my CV!
+            <h1>Get my CV!</h1>
           </Link>
         </SocialLinkContainer>
       </Footer>
