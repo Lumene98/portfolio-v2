@@ -427,13 +427,14 @@ const Home: NextPage = () => {
       <Footer>
         <SocialLinkContainer>
           {SocialIcons.map(({ Icon, url }) => (
-            <SocialLink href={url} target="_blank" key={Icon.name}>
+            <SocialLink href={url} target="_blank" key={Icon.name} rel="noreferrer">
               <Icon />
             </SocialLink>
           ))}
           <Link
             href="https://drive.google.com/file/d/17ufJbDztyHgCb2sCPOwiOsA1MACXzUV5/view?usp=sharing"
             target="_blank"
+            rel="noreferrer"
           >
             <h1>Get my CV!</h1>
           </Link>
