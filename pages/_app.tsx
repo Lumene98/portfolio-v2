@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
   src: url('fonts/basiercircle-regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -15,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
   src: url('fonts/basiercircle-bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 html,
